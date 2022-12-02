@@ -1,5 +1,7 @@
-#input_file = "ExampleData.txt"
-input_file = "MyDataSet.txt"
+import os.path
+
+#input_file = os.path.dirname(os.path.realpath(__file__)) + "/ExampleData.txt"
+input_file = os.path.dirname(os.path.realpath(__file__)) + "/MyDataSet.txt"
 
 with open(input_file) as data_set:
     elf_no = 0
